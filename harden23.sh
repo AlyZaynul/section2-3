@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #2.1.4.1
 command=$(apt purge ntp -y)
 command1=$(apt install ntp -y)
