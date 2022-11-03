@@ -15,9 +15,9 @@ command5=$(systemctl --now enable ntp.service)
 #while user need to login on raspberry pi, this authentication can already be done by the OS no need for additional service
 cmdd=$(apt purge xserver-xorg* -y)
 
-cmmd1=$(systemctl stop avahi-daaemon.service)
-cmmd2=$(systemctl stop avahi-daemon.socket)
-cmmd3=$(apt purge avahi-daemon)
+#cmmd1=$(systemctl stop avahi-daaemon.service)
+#cmmd2=$(systemctl stop avahi-daemon.socket)
+#cmmd3=$(apt purge avahi-daemon)
 
 #as the purpose of the raspberry pi is used for camera streaming and not printing this service can be removed
 cmdd1=$(apt purge cups -y)
